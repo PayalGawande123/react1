@@ -1,0 +1,165 @@
+#contactPage
+{
+    min-height : calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem ;
+    margin : 0 auto;
+    text-align  : center ;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content: center;
+    
+}
+.contactPageTitle
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+.contactPagetitle
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
+    text-align: center;
+   
+}
+.clientDesc {
+    font-weight : 300;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientImgs{
+    margin : 1rem 0;
+    display : flex;
+    flex-wrap : wrap ;
+    justify-content: center;
+    margin-top: 2rem;
+} 
+
+.clientImg {
+    object-fit: contain;
+    width: 100%; /* Use 100% width for responsiveness */
+    max-width: 100px; /* Set a maximum width to control size */
+    margin: 1rem; /* Adjust margin as needed */
+    padding: 0.2rem;
+    margin-top: -1rem;
+}
+.clientImg:hover{
+    transform: scale(1.3);
+    
+}
+
+#clients{
+    padding : 2rem;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 0 auto; 
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center; /* Center the text vertically */
+    align-items: center;
+}
+
+.contactform {
+    margin: 1rem auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    max-width: 40rem;
+
+    
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem auto; 
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: center;
+}
+
+.submitBtn{
+    margin : auto;
+    padding : 0.75rem 3rem;
+    border : none ;
+    border-radius : 1rem;
+    background : white;
+    text-align: center;
+    display: flex;
+}
+    
+   
+
+.links{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.link{
+    object-fit: center ;
+    height: 3rem;
+    width : 3rem;
+    margin :0 0.75rem;
+    
+}
+.link:hover{
+    transform: scale(1.3);
+    background: rgb(6, 4, 146);
+    z-index: 2;
+}
+
+
+@media screen and (max-width=360){
+    .contactPageTitle{
+        display: flex;
+        width: 100%;
+    }
+    
+
+    .contactDesc{
+        
+        max-width: 80%; 
+    }
+    
+    .clientDesc{
+       
+        text-align: center;
+        justify-content: center;
+        margin-left: 0rem;
+        
+    }
+    .contactform {
+        width: 90%;
+    }
+    
+    .name, .email, .msg {
+        max-width: 90%; /* Adjust the maximum width for small screens */
+    }
+}
